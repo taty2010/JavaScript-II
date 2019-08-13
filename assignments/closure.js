@@ -1,6 +1,23 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function color(){
+  const primary = "red, blue, yellow";
+  console.log(`The primary colors are ${primary}`);
+  
+    function secondaryColors(){
+    const secondary = "purple, orange, green";
+    console.log(`When you mix ${primary} you get ${secondary}`);
+      
+        function tertiaryColors(){
+            const tertiary = "red-orange, yellow-orange, yellow-green, blue-green, blue-violet, and red-violet"
+            console.log(`When you mix ${primary} and ${secondary} you can make the colors ${tertiary}`)
+        }
+      tertiaryColors()
+    } 
+  secondaryColors()
+} 
+color()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
